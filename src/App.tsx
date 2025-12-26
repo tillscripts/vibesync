@@ -1,21 +1,28 @@
-import { useState } from "react";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
+import Pricing from './pages/Pricing';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <main className="flex flex-col items-center gap-8 py-16 max-w-[1280px] mx-auto">
-      <h1 className="text-4xl font-bold">Hello React & Tailwind!</h1>
-      <div className="flex flex-row items-center gap-6">
-        <button
-          className="bg-sky-300 px-3 py-2 rounded hover:bg-sky-400"
-          onClick={() => setCount(count + 1)}
-        >
-          Count: {count}
-        </button>
+    <Router>
+      <div className="min-h-screen bg-zinc-950 font-sans selection:bg-emerald-500/30">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/pricing" element={<Pricing />} />
+        </Routes>
       </div>
-    </main>
+    </Router>
   );
 }
 
 export default App;
+
+
+
