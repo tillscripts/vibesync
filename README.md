@@ -17,32 +17,22 @@
 # Project Folder Structure
 ___
 
-vibesync/<br>
-├── public/ <br>
-├── src/ <br>
-│   ├── assets/            # Images and Icons  <br> 
-│   ├── components/       # Reusable UI pieces <br>
-│   │   ├── Layout/.       <br>
-│   │   │   ├── Navbar.jsx.      <br>
-│   │   │   └── Footer.jsx. <br>
-│   │   ├── Music/  <br>
-│   │   │   ├── SongCard.jsx  <br>
-│   │   │   └── SearchBar.jsx  10 <br> 
-│   │   └── UI/  <br>
-│   │       ├── HamburgerMenu.jsx  <br>
-│   │       └── PricingCard.jsx  <br>
-│   ├── hooks/            # Custom logic (Search/Fetch) <br>
-│   │   └── useMusicData.js  <br>
-│   ├── pages/           # Main Page views <br> 
-│   │   ├── Home.jsx  <br>
-│   │   ├── SignIn.jsx  <br>
-│   │   ├── Pricing.jsx  <br>
-│   │   └── Subscribe.jsx  <br>
-│   ├── App.jsx            # Routes and Providers <br>
-│   ├── index.css           # Tailwind Directives <br>
-│   └── main.jsx  <br>
-├── tailwind.config.js  <br>
-└── package.json  <br>
+vibesync/    <br>
+├── public/   <br>
+├── src/.   <br>
+├── components/  <br>
+│   ├── Navbar.jsx        (Header, Search, & Hamburger) <br>
+│   ├── SongCard.jsx      (Individual song item) <br>
+│   ├── Sidebar.jsx       (Hamburger Menu content) <br>
+│   └── Skeleton.jsx      (Loading state for Lazy Loading) <br>
+├── pages/ <br>
+│   ├── Home.jsx          (The main list of 50 songs) <br>
+│   ├── SignIn.jsx        (Functional Email Validation) <br>
+│   ├── SignUp.jsx        (UI only) <br>
+│   └── Pricing.jsx       (UI only) <br>
+├── App.jsx               (Routing & Layout) <br>
+├── main.jsx              (Entry point) <br>
+└── index.css             (Tailwind imports) <br>
 
 
 
