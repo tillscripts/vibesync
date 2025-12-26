@@ -2,7 +2,7 @@
 -  A music app (called VibeSync).
 
 # Summary of Features Implemented:
-- Live Data: Fetches 50 real songs from the iTunes Search API.
+- Live Data: Fetches songs from the iTunes Search API.
 
 - Search: Real-time filtering algorithm for song names and artists.
 
